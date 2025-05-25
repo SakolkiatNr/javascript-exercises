@@ -12,7 +12,6 @@ const palindromes = function (string) {
             forwardString += newString[i];
         }
     }
-
     let backwardString = forwardString.split('').reverse().join('');
     if (forwardString === backwardString) return true;
     else return false;

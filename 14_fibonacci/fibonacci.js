@@ -4,9 +4,7 @@ const fibonacci = function(fn) {
     for (let i = 2; i <= +fn; i++) {
         fib[i] = fib[i - 1] + fib[i - 2];
     }
-    if (+fn < 0) {
-        return 'OOPS';
-    }
+    if (+fn < 0) return 'OOPS';
     return fib[+fn];
 };
 
